@@ -35,7 +35,7 @@ class GhasedakChannel
         if (is_string($sms)) {
             $sms = (new GhasedakSimpleSms($sms))->linenumber(config('services.ghasedak.linenumber'));
         }
-        $receptor = $notifiable->receptor ? $notifiable->receptor : $notifiable->routeNotificationForSms() ? $notifiable->routeNotificationForSms() : $notifiable->phone;
+        $receptor = $notifiable->receptor ? $notifiable->receptor : method_exists($notifiable,'routeNotificationForSms') ? $notifiable->routeNotificationForSms() : $notifiable->phone;
         $sms->receptor($receptor);
 
         if ($sms instanceof GhasedakSimpleSms) {
