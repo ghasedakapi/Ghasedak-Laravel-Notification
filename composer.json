@@ -1,0 +1,53 @@
+{
+    "name": "ghasedak/laravel-notification",
+    "type": "library",
+    "version": "0.0.2",
+    "description": "Ghasedak SmsApi Notifications Channel for Laravel",
+    "homepage": "https://github.com/ghasedakapi/Ghasedak-Laravel-Notification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elham Salimi",
+            "email": "salimiElham65@gmail.com",
+            "role": "Developer"
+        },{
+            "name": " Ghasedak Team",
+            "email": "qazvin@gmail.com",
+            "role": "Company"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ghasedakapi/Ghasedak-Laravel-Notification"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.1",
+        "illuminate/notifications": "~5.5 || ~6.0",
+        "illuminate/support": "~5.5 || ~6.0",
+        "ghasedak/laravel": "dev-master"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Ghasedak\\LaravelNotification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ghasedak\\LaravelNotification\\GhasedakNotificationServiceProvider"
+            ],
+            "aliases": {
+                "Ghasedak": "Ghasedak\\LaravelNotification\\Facade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
