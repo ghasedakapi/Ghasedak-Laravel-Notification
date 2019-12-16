@@ -59,7 +59,7 @@ class SendSms extends Notification
     }
     public function toSms($notifiable)
     {
-        return (new GhasedakOTPSms)->type(1)->template('yourTemplate')->param1('parame1'); // create otp message    }
+        return (new GhasedakOTPSms)->type(1)->template('yourTemplate')->param1('parame1'); // create otp message
 }
 ```
 As default, field `phone` is select for receptor, you can  add a `routeNotificationForSms` method to your Notifiable model to customize the phone number:
