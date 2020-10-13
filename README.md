@@ -41,7 +41,7 @@
 ## Table of Contents    
  * [Install](#install)  
    * [Setting up the Ghasedak service](#setting-up-the-ghasedak-service)
-   * [Add environmental variables to .env file](#add-environmental-variables-to-.env-file)
+   * [Add environmental variables to .env file](#add-environmental-variables-to-env-file)
 * [Usage](#usage)    
   * [Parameters of GhasedakSimpleSms() method](#parameters-of-ghasedaksimplesms-method)
   * [Sending Notifications](#sending-notifications)    
