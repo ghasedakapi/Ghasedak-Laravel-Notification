@@ -33,10 +33,6 @@
    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="license"></a>  
 </p>  
     
-<p align="center">    
-    <a href="#table-of-contents">English Document</a> | <a href="#table-of-contents-fa">مستندات فارسی</a>    
-</p>    
-    
 <!-- TABLE OF CONTENTS -->    
 ## Table of Contents    
  * [Install](#install)  
@@ -165,8 +161,8 @@ class SendSimpleNotification extends Notification
 Send notification using `notify` method:
 ```php
 $arr = array(
-            'message' => 'تست', // message 
-            'linenumber' => '300002525', // choose a line number from your account
+            'message' => 'Hello, World!', // message 
+            'linenumber' => '3000xxxxx', // choose a line number from your account
         );
 $user->notify(new GhasedakSimpleSms($arr));
 ```
@@ -231,7 +227,7 @@ Send notification using `notify` method:
 $params = ['param1', 'param2', 'param3'];   
 $arr = array(
     'type' => 1,      // 1 for text message and 2 for voice message
-    'template' => 'template', // name of the template which you've created in you account
+    'template' => 'my-template', // name of the template which you've created in you account
     'params' => $params, // parameters (supporting up to 10 parameters) 
 );
 $user->notify(new SendSimpleNotification($arr));
