@@ -1,8 +1,8 @@
 {
     "name": "ghasedak/laravel-notification",
     "type": "library",
-    "version": "0.0.2",
-    "description": "Ghasedak SmsApi Notifications Channel for Laravel",
+    "version": "1.0.0",
+    "description": "Ghasedak SMS Notifications Channel for Laravel",
     "homepage": "https://github.com/ghasedakapi/Ghasedak-Laravel-Notification",
     "license": "MIT",
     "authors": [
@@ -22,12 +22,10 @@
             "url": "https://github.com/ghasedakapi/Ghasedak-Laravel-Notification"
         }
     ],
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.0.0",
-        "illuminate/notifications": "~5.5 || ~6.0",
-        "illuminate/support": "~5.5 || ~6.0",
-        "ghasedak/laravel": "dev-master"
+        "ghasedak/laravel": "~1.0.0"
     },
     "require-dev": {
     },
