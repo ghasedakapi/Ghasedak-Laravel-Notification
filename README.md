@@ -122,14 +122,11 @@ public function routeNotificationForSms()
  | senddate | No | The exact date and time of sending the message based on Unix time, if not specified, the message will be sent instantly. | string | 1508144471 | | checkid | No | It is used to set a unique number for each SMS, and after sending the SMS, all the information of the sent message can be received with the `status` method. | string | 2071 |
  
 ## Sending Notifications
-Notifications may be sent in two ways: using the `notify` method of the Notifiable trait or using the `Notification` facade.
+Notifications may be sent using the `notify` method of the Notifiable trait:
 ```php
 use Ghasedak\LaravelNotification\GhasedakSimpleSms;
 
-
 $user->notify(new GhasedakSimpleSms());
-// or
-Notification::send($users, new GhasedakSimpleSms());
 ```
      
  ## Example
@@ -177,9 +174,14 @@ $user->notify(new GhasedakSimpleSms($arr));
  ## One-Time Passwords (OTP) 
  
 The One-Time-Password (OTP) Interface is used to perform a mobile authentication or to implement Two-Factor-Authentication (2FA).    
-You can pass up to 10 `param` to `Verify` method:
 
 ```php
+$params = ['1', '2'];
+$arr = array(
+    'type' => 1,
+    'template' => 'template',
+    'params' => $params
+);
 $user->notify(new SendOTPNotification($arr));
  ``` 
 ## Parameters
