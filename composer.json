@@ -38,10 +38,7 @@
         "laravel": {
             "providers": [
                 "Ghasedak\\LaravelNotification\\GhasedakNotificationServiceProvider"
-            ],
-            "aliases": {
-                "Ghasedak": "Ghasedak\\LaravelNotification\\Facade"
-            }
+            ]
         }
     },
     "config": {
