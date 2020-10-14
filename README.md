@@ -53,6 +53,7 @@
 ```php
 composer require ghasedak/laravel-notification
 ```    
+Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
 ### Setting up the Ghasedak service
 To setup Ghasedak service properly you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
 <br>
