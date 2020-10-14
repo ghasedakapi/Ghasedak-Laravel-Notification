@@ -36,7 +36,7 @@
 <!-- TABLE OF CONTENTS -->    
 ## Table of Contents    
  * [Install](#install)  
-   * [Setting up the Ghasedak service](#setting-up-the-ghasedak-service)
+   * [Setting up Ghasedak service](#setting-up-ghasedak-service)
    * [Add environmental variables to .env file](#add-environmental-variables-to-env-file)
 * [Usage](#usage)    
   * [Parameters of GhasedakSimpleSms() method](#parameters-of-ghasedaksimplesms-method)
@@ -54,7 +54,7 @@
 composer require ghasedak/laravel-notification
 ```    
 Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
-### Setting up the Ghasedak service
+### Setting up Ghasedak service
 To setup Ghasedak service properly you need an API key. To get that you should have a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
 <br>
 Then you need to set simple configuration by adding following code to your `services.php` file.
